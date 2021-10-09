@@ -3,13 +3,14 @@
 // balloons pop up if number is right
 
 function getAnswer() {
+    // TODO
     return 77
 }
 
 var answer = getAnswer()
 
 function guess() {
-    var value = document.getElementById("input").value
+    var value = parseInt(document.getElementById("input").value)
     if (value > answer) {
         alert("too high")
     } else if (value < answer) {
@@ -17,5 +18,6 @@ function guess() {
     } else if (value === answer) {
         alert("balloon")
     }
+    return false
 }
-document.getElementById("button").onclick = guess
+document.getElementById("form").onsubmit = guess
