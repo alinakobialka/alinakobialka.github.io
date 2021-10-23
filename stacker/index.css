@@ -6,3 +6,6 @@
 .row {
   display: flex;
 }
+.selected {
+  background-color: red;
+}
